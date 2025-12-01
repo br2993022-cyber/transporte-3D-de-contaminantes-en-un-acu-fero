@@ -1,0 +1,4 @@
+body{margin:0;overflow:hidden;background:#0a0a0a;color:#fff;font-family:Arial}
+#panel{position:absolute;left:20px;top:20px;width:300px;padding:16px;background:rgba(0,0,0,0.55);border-radius:10px}
+label{display:block;margin-top:10px}input[type=range]{width:100%}button{margin-top:10px;padding:8px;width:100%;border:none;border-radius:8px;background:#3498db;color:#fff;cursor:pointer}
+canvas{display:block}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Transporte 3D - BASIC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="panel">
+  <h1>Transporte 3D de contaminantes</h1>
+  <p>Simulación de concentración de contaminante en un acuífero.</p>
+  <p>Ajusta parámetros. Pulsa <strong>Generar nube</strong>.</p>
+  <p>Pausa y despues genera la nube para verla desde distintos angulos (gira la nube solo en PC o Laptop).</p>
+
+  <label>Velocidad del viento: <span id="windVal">0.02</span></label>
+  <input type="range" id="wind" min="0" max="0.1" step="0.001" value="0.02">
+
+  <label>Decaimiento temporal: <span id="decayVal">0.99</span></label>
+  <input type="range" id="decay" min="0.90" max="1" step="0.001" value="0.99">
+
+  <label>Decaimiento espacial: <span id="spaceVal">0.005</span></label>
+  <input type="range" id="spaceDecay" min="0.000" max="0.03" step="0.001" value="0.005">
+
+
+  <label>Densidad de partículas: <span id="densVal">6000</span></label>
+  <input type="range" id="density" min="500" max="15000" step="250" value="6000">
+
+  <button id="generate">Generar nube</button>
+  <button id="pause">Pausar</button>
+</div>
+
+<canvas id="scene"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+  
